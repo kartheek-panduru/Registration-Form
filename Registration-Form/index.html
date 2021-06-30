@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <div class="feedback-form">
+        <form>
+            <div class="silver-background">
+                <h1>Feedback Form </h1>
+                <p>Thank you for taking your time to let us know our improvements!</p>
+            </div>
+            <br>
+
+            <h3 class="name">
+                Name:
+                <input type="text" STYLE="background-color: #d3d0d01c;" style="color: whitesmoke;" required>
+            </h3>
+            
+            <h3 class="age">
+                Age:
+                <input type="number" size="05px" min="1" STYLE="background-color: #d3d0d01c;" required>
+                <br><br>
+
+                Gender:  
+                <input type="radio" STYLE="background-color: #d3d0d01c;" id="Male" name="Gender" value="Male" > 
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" id="Other" name="Gender" value="Other"> 
+                <label for="Other">Other</label>
+                <br><br>
+
+                Country:
+                <select name="country" id="country" STYLE="background-color: #d3d0d01c;" >
+                    <option value="None">Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="UK">UK</option>
+                    <option value="China">China</option>
+                    <option value="Russia">Russia</option>
+                </select>
+                <br><br>
+                
+                Mobile No. :
+                <input type="tel" pattern="[0-9]+" placeholder="10-digit mobile number" maxlength="10" size="15" STYLE="background-color: #d3d0d01c;">
+                <br><br>
+                
+                Email. :
+                <input type="text" placeholder="ex: something@gmail.com" size="30" STYLE="background-color: #d3d0d01c;">
+                <br><br>
+                
+                Feedback:
+                <div class="textarea blocks-color">
+                    <textarea rows="4" cols="50" required placeholder="Write something..." STYLE="background-color: #d3d0d01c;"></textarea>
+                </div>
+            </h3>
+
+            <button class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
